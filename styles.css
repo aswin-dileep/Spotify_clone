@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+    font-family: 'Varela Round', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: black;
+    height: 65px;
+    color:white;
+    font-family: 'Ubuntu',sans-serif;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand{
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+}
+.brand img{
+    width: 49px;
+    padding: 0 8px;
+}
