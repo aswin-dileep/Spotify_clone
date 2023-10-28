@@ -31,3 +31,41 @@ nav ul li{
     width: 49px;
     padding: 0 8px;
 }
+
+.container{
+    height: 72vh;
+    font-family: 'Varela Round',sans-serif;
+    background-color: black;
+    display: flex;
+    color: white;
+    width: 70%;
+    margin: 23px auto;
+    padding: 7px;
+    border-radius: 12px;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+.bottom{
+    height: 90px;
+    background-color: black;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.icons{
+    margin: 15px ; 
+    cursor: pointer;  
+}
+.icons i{
+    padding: 0 3px;
+}
+
+#myProgressBar{
+    width: 80vw;
+}
+
