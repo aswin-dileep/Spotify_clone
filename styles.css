@@ -11,6 +11,7 @@ body{
 }
 
 nav ul{
+    top: 0;
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -33,14 +34,14 @@ nav ul li{
 }
 
 .container{
-    height: 73vh;
+    height: 72vh;
     font-family: 'Varela Round',sans-serif;
     background-color: black;
     display: flex;
     color: white;
     width: 70%;
     margin: 23px auto;
-    padding: 7px;
+    padding: 34px;
     border-radius: 12px;
     background-image: url("bg.jpg");
     background-size: cover;
@@ -82,9 +83,10 @@ nav ul li{
     transition: opacity 1s ease-in;
 }
 .bottom{
+    position: sticky;
+    bottom: 0;
     height: 90px;
     background-color: black;
-    position: sticky;
     display: flex;
     align-items: center;
     justify-content: center;
