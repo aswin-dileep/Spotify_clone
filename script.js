@@ -16,8 +16,7 @@ let songs=[
     {songName:"song 6",filePath:"songs/6.mp3",coverPath:"covers/6.jpg"},
     {songName:"song 7",filePath:"songs/7.mp3",coverPath:"covers/7.jpg"},
     {songName:"song 8",filePath:"songs/8.mp3",coverPath:"covers/8.jpg"},
-    {songName:"song 9",filePath:"songs/9.mp3",coverPath:"covers/9.jpg"},
-    {songName:"song 10",filePath:"songs/10.mp3",coverPath:"covers/10.jpg"}
+    
 ]
 
 songItem.forEach((element,i) => {
@@ -74,13 +73,37 @@ Array.from(document.getElementsByClassName("songPlayItem")).forEach((element) =>
             songIndex = parseInt(e.target.id)
             console.log(songIndex)
             e.target.classList.remove("fa-play-circle");
-            e.target.classList.add("fa-circle-pause");
-            
+            e.target.classList.add("fa-circle-pause");           
             audioElement.src =`songs/${songIndex+1}.mp3`;
             audioElement.currentTime =0;
             audioElement.play();
-            e.target.classList.remove("fa-play-circle");
-            e.target.classList.add("fa-circle-pause");
+            masterPlay.classList.remove("fa-play-circle");
+            masterPlay.classList.add("fa-pause-circle");
+            
       
         });
 });
+
+document.getElementById("next").addEventListener('click',(element)=>{
+    if(songIndex>=7){
+        songIndex =0;
+    }else{
+        songIndex +=1;
+    }
+    audioElement.src =`songs/${songIndex+1}.mp3`;
+    audioElement.currentTime =0;
+    audioElement.play();
+    
+})
+
+document.getElementById("previous").addEventListener('click',(element)=>{
+    if(songIndex<=0){
+        songIndex =7;
+    }else{
+        songIndex -=1;
+    }
+    audioElement.src =`songs/${songIndex+1}.mp3`;
+    audioElement.currentTime =0;
+    audioElement.play();
+   
+})
