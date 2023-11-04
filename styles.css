@@ -2,14 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
 body{
     background-color: antiquewhite;
-    font-family: 'Varela Round', sans-serif;
 }
 
 *{
     margin: 0;
     padding: 0;
 }
-
+nav{
+   
+    font-family: 'Ubuntu',sans-serif;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
 nav ul{
     top: 0;
     display: flex;
@@ -18,7 +24,7 @@ nav ul{
     background-color: black;
     height: 65px;
     color:white;
-    font-family: 'Ubuntu',sans-serif;
+   
 }
 nav ul li{
     padding: 0 12px;
@@ -27,6 +33,7 @@ nav ul li{
     display: flex;
     font-weight: bolder;
     align-items: center;
+    
 }
 .brand img{
     width: 49px;
@@ -34,13 +41,13 @@ nav ul li{
 }
 
 .container{
-    height: 72vh;
+    min-height: 72vh;
     font-family: 'Varela Round',sans-serif;
     background-color: black;
     display: flex;
     color: white;
     width: 70%;
-    margin: 23px auto;
+    margin: 85px auto;
     padding: 34px;
     border-radius: 12px;
     background-image: url("bg.jpg");
